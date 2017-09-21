@@ -3,11 +3,12 @@ var express = require('express'),
     app     = express(),
     morgan  = require('morgan');
 var path = require('path');
-    
+var compression = require('compression');
 Object.assign=require('object-assign')
 
 app.engine('html', require('ejs').renderFile);
 app.use(morgan('combined'))
+app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
