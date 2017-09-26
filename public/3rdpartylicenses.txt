@@ -103,7 +103,7 @@ SOFTWARE.
 
 @angular/animations@4.3.4 MIT
 
-ng-zorro-antd@0.5.1 MIT
+ng-zorro-antd@0.5.2 MIT
 
 script-loader@0.7.0 MIT
 
